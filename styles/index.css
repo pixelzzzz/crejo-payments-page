@@ -1,0 +1,112 @@
+body {
+  background-color: #ffffff;
+}
+img {
+  position: absolute;
+  left: 1vw;
+  top: 1vh;
+  height: 10vh;
+  width: 10vh;
+}
+#card-container {
+  position: absolute;
+  height: 30vh;
+  width: 25vw;
+  left: 34.5vw;
+  top: 15vh;
+  border-radius: 8px;
+  background-color: #d3d3d3;
+}
+#card-details-container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#card-number-container {
+  width: 20vw;
+}
+.card-input-box {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  color: #808080;
+  transition: border-bottom 0.5s;
+}
+.card-input-box:focus {
+  border-bottom: 1px solid #808080;
+  outline: none;
+}
+#card-number {
+  width: 20vw;
+}
+#name-and-expiry-date-container {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#name-container {
+  width: 12vw;
+}
+#card-name {
+  width: 12vw;
+  overflow-x: scroll;
+}
+#expiry-date-container {
+  width: 4vw;
+}
+#card-expiry {
+  width: 4vw;
+}
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  height: 30vh;
+  width: 25vw;
+  left: 34.5vw;
+  top: 55vh;
+}
+.form-input-box {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  background: transparent;
+  border: 1px solid #0000ff;
+  border-radius: 8px;
+}
+#form-card-number {
+  width: 25vw;
+}
+#form-card-name {
+  width: 25vw;
+}
+#valid-thru-and-cvc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+}
+#valid-thru-input {
+  width: 10vw;
+}
+#cvc-input {
+  width: 10vw;
+}
+#pay-button {
+  width: 25vw;
+  border-radius: 8px;
+  background-color: #0000ff;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 1vh;
+}

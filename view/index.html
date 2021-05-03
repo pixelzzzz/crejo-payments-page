@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script src="../script/index.js"></script>
+    <title>Crejo.fun Payments Page</title>
+  </head>
+  <body>
+    <img src="../assets/crejoLogo.jpeg"/>
+    <div id="card-container">
+      <div id="card-details-container">
+        <div id="card-number-container">
+          <input
+            class="card-input-box"
+            id="card-number"
+            type="text"
+            placeholder="**** **** **** ****"
+          />
+        </div>
+        <div id="name-and-expiry-date-container">
+          <div id="name-container">
+            <input
+              class="card-input-box"
+              id="card-name"
+              type="text"
+              placeholder="YOUR NAME HERE"
+            />
+          </div>
+          <div id="expiry-date-container">
+            <input
+              class="card-input-box"
+              id="card-expiry"
+              type="text"
+              placeholder="MM/YY"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="form-container">
+      <input
+        class="form-input-box"
+        id="form-card-number"
+        type="text"
+        placeholder="Card Number"
+        maxlength="19"
+        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+        onkeyup="inputCardNumber(event)"
+      />
+      <input
+        class="form-input-box"
+        id="form-card-name"
+        placeholder="Name"
+        onkeyup="inputCardName()"
+      />
+      <div id="valid-thru-and-cvc-container">
+        <input
+          class="form-input-box"
+          id="valid-thru-input"
+          type="text"
+          placeholder="Valid Thru"
+          maxlength="5"
+          onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+          onkeyup="inputCardEndDate(event)"
+        />
+        <input
+          class="form-input-box"
+          id="cvc-input"
+          type="password"
+          placeholder="CVC"
+          maxlength="3"
+          onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+        />
+      </div>
+      <div id="pay-button" onclick="onSubmit()">PAY</div>
+    </div>
+  </body>
+</html>
